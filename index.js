@@ -38,7 +38,7 @@ function creatActionGhost(actionHandler) {
                 for (var _i = 0; _i < arguments.length; _i++) {
                     args[_i] = arguments[_i];
                 }
-                args.push(prop);
+                args.unshift(prop);
                 return actionHandler.handleAction.apply(actionHandler, args);
             };
             fns.setItem(prop, fn);

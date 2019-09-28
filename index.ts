@@ -48,7 +48,7 @@ export function creatActionGhost<T extends IActionHandler>(actionHandler: T) {
       if (temp) { return temp } // already exist fn
 
       let fn = function (...args: [any]) {
-        args.push(prop)
+        args.unshift(prop)
         return actionHandler.handleAction.apply(
           actionHandler, args
         )
