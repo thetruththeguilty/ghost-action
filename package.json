@@ -1,6 +1,10 @@
 {
   "name": "ghost-action",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8"
+  }
 }
